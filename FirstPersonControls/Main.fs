@@ -51,7 +51,8 @@ module Definition =
             "viewHalfX"         =@ T<float>
             "viewHalfY"         =@ T<float>
 
-            "update" => T<float>?delta ^-> O
+            "handleResize" => O ^-> O
+            "update"       => T<float>?delta ^-> O
         ]
         |> Requires [
             mainResource
