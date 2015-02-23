@@ -1,25 +1,25 @@
 namespace FirstPersonControls
 
-open IntelliFactory.WebSharper.InterfaceGenerator
+open WebSharper.InterfaceGenerator
 
 module Definition =
-    open IntelliFactory.WebSharper.ThreeJs
-    open IntelliFactory.WebSharper.JavaScript.Dom
+    open WebSharper.ThreeJs
+    open WebSharper.JavaScript.Dom
 
     let O = T<unit>
 
     let mainResource =
         Resource "FirstPersonControls" "FirstPersonControls.js"
         |> RequiresExternal [
-            T<IntelliFactory.WebSharper.ThreeJs.Resources.Js>
+            T<WebSharper.ThreeJs.Resources.Js>
         ]
 
     let FirstPersonControls =
         Class "THREE.FirstPersonControls"
-        |+> [
+        |+> Static [
             Constructor (T<THREE.Object3D>?``object`` * !? T<Element>?domElement)
         ]
-        |+> Protocol [
+        |+> Instance [
             "object"            =@ T<THREE.Object3D>
             "target"            =@ T<THREE.Vector3>
             "domElement"        =? T<Element>
@@ -60,10 +60,10 @@ module Definition =
 
     let Assembly =
         Assembly [
-            Namespace "IntelliFactory.WebSharper.ThreeJs.THREE" [
+            Namespace "WebSharper.ThreeJs.THREE" [
                  FirstPersonControls
             ]
-            Namespace "IntelliFactory.WebSharper.ThreeJs.Resources" [
+            Namespace "WebSharper.ThreeJs.Resources" [
                  mainResource
             ]
         ]

@@ -2,26 +2,18 @@
 open IntelliFactory.Build
 
 let bt =
-    (
-        BuildTool().PackageId("WebSharper.ThreeJs.FirstPersonControls", "3.0-alpha")
-        |> fun bt ->
-            bt.WithFramework bt.Framework.Net40
-    )
-        .References (fun r ->
+    BuildTool().PackageId("WebSharper.ThreeJs.FirstPersonControls", "3.0-alpha")
+    |> fun bt -> bt.WithFramework bt.Framework.Net40
+
+let main =
+    bt.WebSharper.Extension("WebSharper.ThreeJs.FirstPersonControls")
+        .SourcesFromProject()
+        .Embed(["FirstPersonControls.js"])
+        .References(fun r ->
             [
                 r.NuGet("WebSharper.ThreeJs").Reference()
             ]
         )
-
-let main =
-    (
-        bt.WebSharper.Extension "IntelliFactory.WebSharper.ThreeJs.FirstPersonControls"
-        |> FSharpConfig.BaseDir.Custom "FirstPersonControls"
-    )
-        .SourcesFromProject("FirstPersonControls.fsproj")
-        .Embed [
-            "FirstPersonControls.js"
-        ]
 
 bt.Solution [
     main

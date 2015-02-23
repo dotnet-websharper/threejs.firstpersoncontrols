@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FirstPersonControls", "FirstPersonControls\FirstPersonControls.fsproj", "{9E720DA1-8B6E-491B-9299-A3479736C58B}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebSharper.FirstPersonControls", "WebSharper.FirstPersonControls\WebSharper.FirstPersonControls.fsproj", "{9E720DA1-8B6E-491B-9299-A3479736C58B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
