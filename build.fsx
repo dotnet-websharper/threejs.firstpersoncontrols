@@ -2,8 +2,9 @@
 open IntelliFactory.Build
 
 let bt =
-    BuildTool().PackageId("WebSharper.ThreeJs.FirstPersonControls", "3.0")
-    |> fun bt -> bt.WithFramework bt.Framework.Net40
+    BuildTool().PackageId("WebSharper.ThreeJs.FirstPersonControls")
+        .VersionFrom("WebSharper")
+        .WithFramework(fun fw -> fw.Net40)
 
 let main =
     bt.WebSharper.Extension("WebSharper.ThreeJs.FirstPersonControls")
