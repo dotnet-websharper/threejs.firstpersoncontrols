@@ -2,18 +2,18 @@
 open IntelliFactory.Build
 
 let bt =
-    BuildTool().PackageId("Zafir.ThreeJs.FirstPersonControls")
-        .VersionFrom("Zafir")
+    BuildTool().PackageId("WebSharper.ThreeJs.FirstPersonControls")
+        .VersionFrom("WebSharper")
         .WithFSharpVersion(FSharpVersion.FSharp30)
         .WithFramework(fun fw -> fw.Net40)
 
 let main =
-    bt.Zafir.Extension("WebSharper.ThreeJs.FirstPersonControls")
+    bt.WebSharper4.Extension("WebSharper.ThreeJs.FirstPersonControls")
         .SourcesFromProject()
         .Embed(["FirstPersonControls.js"])
         .References(fun r ->
             [
-                r.NuGet("Zafir.ThreeJs").Latest(true).ForceFoundVersion().Reference()
+                r.NuGet("WebSharper.ThreeJs").Latest(true).ForceFoundVersion().Reference()
             ]
         )
 
@@ -23,7 +23,7 @@ bt.Solution [
     bt.NuGet.CreatePackage()
         .Configure(fun c ->
             { c with
-                Title = Some "Zafir.ThreeJs.FirstPersonControls"
+                Title = Some "WebSharper.ThreeJs.FirstPersonControls"
                 LicenseUrl = Some "http://websharper.com/licensing"
                 ProjectUrl = Some "https://bitbucket.org/intellifactory/websharper.threejs.firstpersoncontrols"
                 Description = "WebSharper Extensions for ThreeJs.FirstPersonControls 20140124"
