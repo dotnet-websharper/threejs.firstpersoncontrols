@@ -12,7 +12,7 @@ C:\Jenkins\workspace\zafir.threejs.firstpersoncontrols\WebSharper.ThreeJs.FirstP
 C:\Jenkins\workspace\zafir.threejs.firstpersoncontrols\WebSharper.ThreeJs.FirstPersonControls\bin\Release\net461\WebSharper.Sitelets.dll
 C:\Jenkins\workspace\zafir.threejs.firstpersoncontrols\WebSharper.ThreeJs.FirstPersonControls\bin\Release\net461\WebSharper.Web.dll
 C:\Jenkins\workspace\zafir.threejs.firstpersoncontrols\WebSharper.ThreeJs.FirstPersonControls\bin\Release\net461\WebSharper.ThreeJs.dll
-C:\Jenkins\workspace\zafir.threejs.firstpersoncontrols\WebSharper.ThreeJs.FirstPersonControls\obj\Release\net461\WebSharper.ThreeJs.FirstPersonControls.fsprojResolveAssemblyReference.cache
+C:\Jenkins\workspace\zafir.threejs.firstpersoncontrols\WebSharper.ThreeJs.FirstPersonControls\obj\Release\net461\WebSharper.ThreeJs.FirstPersonControls.fsprojAssemblyReference.cache
 C:\Jenkins\workspace\zafir.threejs.firstpersoncontrols\WebSharper.ThreeJs.FirstPersonControls\obj\Release\net461\WebSharper.ThreeJs.FirstPersonControls.fsproj.CopyComplete
 C:\Jenkins\workspace\zafir.threejs.firstpersoncontrols\WebSharper.ThreeJs.FirstPersonControls\obj\Release\net461\WebSharper.ThreeJs.FirstPersonControls.dll
 C:\Jenkins\workspace\zafir.threejs.firstpersoncontrols\WebSharper.ThreeJs.FirstPersonControls\obj\Release\net461\WebSharper.ThreeJs.FirstPersonControls.xml
